@@ -1,0 +1,23 @@
+{% if settings.slideshow_story_enabled %}
+  <div id="slide-story">
+    <div class="bcg"
+        data-bottom-top="background-position: 50% 200px;"
+        data-top-bottom="background-position: 50% -200px;"
+        data-anchor-target="#slide-story">
+        <div class="hsContainer">
+            <div class="hsContent {{ settings.image_story_text_align }}">
+              <div>
+                <h1 class="headline" style="color:{{settings.image_story_text_color}}">{{ settings.image_story_headline }}</h1>
+                <p class="subtitle" style="color:{{settings.image_story_text_color}}">{{ settings.image_story_subtitle }}</p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <a name="pagecontent" id="pagecontent"></a>
+  <div class="container">
+  <br class="clear" />
+{% endif %}
+
+{{ page.content }}
+ 

@@ -1,0 +1,24 @@
+{% if settings.slideshow_press_enabled %}
+  <div id="slide-press">
+    <div class="bcg"
+        data-bottom-top="background-position: 50% 200px;"
+        data-top-bottom="background-position: 50% -200px;"
+        data-anchor-target="#slide-press">
+        <div class="hsContainer">
+            <div class="hsContent {{ settings.image_press_text_align }}">
+              <div>
+                <h1 class="headline" style="color:{{settings.image_press_text_color}}">{{ settings.image_press_headline }}</h1>
+                <p class="subtitle" style="color:{{settings.image_press_text_color}}">{{ settings.image_press_subtitle }}</p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <a name="pagecontent" id="pagecontent"></a>
+  <div class="container">
+  <br class="clear" />
+{% endif %}
+
+{{ page.content }}
+ 
+
